@@ -11,18 +11,52 @@
 </head>
 <body>
     <header>
-            <h1>Antonio Bezerra</h1>
-            <h2>ARTS & DEVELOPER</h2>
+      <nav class="navbar navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Antonio Bezerra</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Antonio Bezerra</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://issuu.com/didiophoto/docs/portfolioweb/1" target="_blank">Portfolio</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    SKILLS
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                    <li><a class="dropdown-item" href="#">WEB DEVELOPER</a></li>
+                    <li><a class="dropdown-item" href="#">ARTS</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="http://modelsbydidio.blogspot.com/" target="_blank">PHOTOGRAPHER</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                </svg></button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
 
     </header>
-    <nav class="navbar navbar-light bg-light">
-        <form class="container-fluid justify-content-start">
-          <button class="btn btn-sm btn-outline-secondary" type="button">Home</button>
-          <button class="btn btn-sm btn-outline-secondary" type="button">About</button>
-          <button class="btn btn-sm btn-outline-secondary" type="button"><a href="https://issuu.com/didiophoto/docs/portfolioweb/1" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">Portfolio</a></button>
-          <button class="btn btn-sm btn-outline-secondary" type="button">Contato</button>
-        </form>
-      </nav>
+   
 
     <main>
         <section id="fundo">
@@ -43,6 +77,12 @@
       <a href="https://www.linkedin.com/in/didiophoto///" target="_blank"><img src="imagens/linkd.png" alt=""></a>
 
     </footer>
+
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    
     
 </body>
 </html>
