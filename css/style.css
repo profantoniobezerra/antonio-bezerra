@@ -98,6 +98,7 @@ main > section{
 main img{
     width: 52%;
     padding: 3%;
+    
 }
 main img.pequena{
     max-width: 350px;
