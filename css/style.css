@@ -6,6 +6,14 @@
 .polaroid-originale-4-hex { color: #403A3A; }
 .polaroid-originale-5-hex { color: #F2F2F2; }
 */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap');
+@font-face {
+    font-family: 'Raleway', sans-serif 'Noto Sans', sans-serif;
+    src: url("../fontes/Raleway-VariableFont_wght.ttf");
+    src: url("../fontes/NotoSans-Regular.ttf");
+    
+}
 
 :root{
     --cor0:#D9CDBF;
@@ -15,6 +23,8 @@
     --cor4:#F2F2F2;
 
     --fonte-padrao: Arial, verdana, sans-serif;
+    --fonte-headerh1: 'Raleway';
+    --fonte-headerh2:'Noto Sans';
 
 }
 *{
@@ -26,7 +36,7 @@
 
 body{
     background-color: var(--cor0);
-    font-family: var(--fonte-padrao);
+    font-family: var(--fonte-headerh1);
 }
 
 header{
@@ -39,11 +49,19 @@ header{
 
 header > h1 {
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--fonte-headerh1);
     font-size: 3em;
     margin-bottom: 10px;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.473);
     font-weight: normal;
+}
+header > h2 {
+    color: var(--cor3);
+    font-family: var(--fonte-headerh2);
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    font-weight: bold;
+    padding: 10px;
 }
 
 header > p{
@@ -72,7 +90,7 @@ main{
     max-width: 1000px;
     margin: auto;
     margin-bottom: 30px;
-    background-color: white;
+    background-color: var(--cor4);
     padding: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.541);
     border-bottom-left-radius: 10px;
@@ -91,20 +109,43 @@ main h2{
     font-weight: normal;
 }
 
-main img{
-    width: 100%;
-}q
+main > section{
+    text-align: center;
+}
 
+main img{
+    width: 70%;
+    padding: 3%;
+}
 main img.pequena{
     max-width: 350px;
     display: block;
-    margin: auto;
+    margin: auto
+}
+main > div{
+    text-align: center;
+}
+div.video{
+    background-color: var(--cor5);
+    margin-bottom: 20px;
+    margin-top: 0px -20px 20px -20px;
+    padding: 0px;
+    padding-bottom: 58% ;
+    position: relative;
+}
+div.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    
 }
 
 footer{
-    background-color: var(--cor4);
-    color: var(--cor2);
-    padding: 20px;
+    background-color: var(--cor2);
+    color: var(--cor3);
+    padding: 10px;
     margin: auto;
     text-align: center;
     font-size: .8em;
