@@ -20,7 +20,8 @@
     --cor1:#A67356;
     --cor2:#262323;
     --cor3:#403A3A;
-    --cor4:#F2F2F2;
+    --cor4:#FFE561;
+    --cor5:#5459EB;
 
     --fonte-padrao: Arial, verdana, sans-serif;
     --fonte-headerh1: 'Raleway';
@@ -36,12 +37,16 @@
 
 
 body{
-    background-color: var(--cor0);
+    background-color: var(--cor5);
     font-family: var(--fonte-headerh1);
 }
 
+header > nav{
+    background-color: #5459EB;
+}
+
 header{
-    background-color: var(--cor2);
+    background-color: var(--cor5);
     text-align: center;
     padding-top: 30px;
     font-weight: normal;
@@ -63,8 +68,8 @@ header > h2 {
     padding: 10px;
 }
 nav{
-    font-family: Arial, Helvetica, sans-serif;
-    color: black;
+    font-family: var(--fonte-headerh1);
+    color: var(--cor5);
     font-size: 12pt;
     padding: 10px;
 }
@@ -72,11 +77,10 @@ nav{
 main{
     
     margin: auto;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
     background-color: var(--cor3);
-    padding: 20px;
-    border-bottom-left-radius: 10px;
-    border: bottom right radius 10px;
+    padding: 10px;
+  
 }
 main h1{
     color: var(--cor2);
@@ -96,7 +100,7 @@ main > section{
 }
 
 main img{
-    width: 52%;
+    width: 90%;
     padding: 3%;
     
 }
@@ -108,27 +112,27 @@ main img.pequena{
 main > div{
     text-align: center;
 }
-div.video{
-    background-color: var(--cor5);
-    margin-bottom: 20px;
-    margin-top: 0px -20px 20px -20px;
-    padding: 0px;
+div#video{
+    background-color: var(--cor0);
+    margin-bottom: 30px;
+    margin-top: 20px -20px 20px -20px;
+    padding: 10px;
     padding-bottom: 58% ;
     position: relative;
 }
-div.video > iframe{
+div#video > iframe{
     position: absolute;
-    top: 5%;
-    left: 5%;
-    width: 90%;
-    height: 90%;
+    top: 15%;
+    left: 15%;
+    width: 70%;
+    height: 70%;
     
 }
 
 footer{
-    background-color: var(--cor5);
+    background-color: var(--cor4);
     color: var(--cor3);
-    padding: 10px;
+    padding: 5px;
     margin: auto;
     text-align: center;
     font-size: .8em;
